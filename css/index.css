@@ -14,7 +14,7 @@ header {
     display: flex;
     height: 10rem;
     justify-content: space-between;
-    background-color: #1755b1;
+    background:  linear-gradient(to top, #1755b1 0%,#2782c4 20%,#6da6ce 50%,#96b7d1 80%,#c5d6e2 100%);
     align-items: center;
     padding: 1rem;
 }
@@ -24,12 +24,13 @@ header div p{
 }
 nav a {
     font-weight: 600;
-    padding-right: 1rem;
     text-decoration: none;
     color: black;
 }
 nav a:hover{
     color: whitesmoke;
+    border-bottom: solid 2px white ;
+    padding: .4rem 1rem;
 }
 
 .logo{
@@ -88,7 +89,13 @@ section h2{
     color: #4e4e4e;
     gap: 1.8rem;
 }
-
+.img{
+    transition: all .4s linear;
+}
+.img:hover{
+    transform: scale(1.1, 1.1);
+    filter: brightness(.4);
+}
 
 /*GRID GALLERY*/
 .subtitulo{
@@ -164,9 +171,6 @@ footer div{
 }
 /*media header*/
 @media screen and (max-width: 768px){
-    body{
-        display: grid;
-    }
     header{
         display: flex;
         flex-direction: column;
@@ -248,8 +252,7 @@ footer div{
         font-size: 1.5rem;
     }
     .destinos img{
-        max-width: 25rem;
-        max-height: 25rem;
+        width: 100%;
     }
 }
 /*media grid*/

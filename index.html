@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlyFast</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <!--Header de la pagina-->
 <header>
     <div class="logo"> 
-        <img src="./multimedia/png-clipart-travel-agent-hotel-flight-airline-ticket-travel-globe-logo-removebg-preview.png" alt="logo">
-        <p>FlyFast</p>
+        <img src="./multimedia/png-clipart-travel-agent-hotel-flight-airline-ticket-travel-globe-logo-removebg-preview.png" alt="logo" class="animate__animated animate__backInLeft">
+        <p class="animate__animated animate__fadeInDown">FlyFast</p>
     </div>
     <nav>
         <ul class="enlaces">
@@ -69,43 +74,43 @@
         <article class="destinos">
             <div>
                 <h3>Viajes a Berlin</h3>
-                <img src="./multimedia/Berlin 1.jpg" alt="Berlin">
+                <img src="./multimedia/Berlin 1.jpg" alt="Berlin" class="img">
             </div>
             <div>
                 <h3>Viajes a Rio de Janeiro</h3>
-                <img src="./multimedia/Rio 1.jpg" alt="Rio">
+                <img src="./multimedia/Rio 1.jpg" alt="Rio" class="img">
             </div>
             <div>
                 <h3>Viajes a Barcelona</h3>
-                <img src="./multimedia/Barcelona1.jpg" alt="Barcelona">
+                <img src="./multimedia/Barcelona1.jpg" alt="Barcelona" class="img">
             </div>
         </article>
         <article class="destinos">
             <div>
                 <h3>Viajes a Roma</h3>
-                <img src="./multimedia/Roma 1.jpg" alt="Roma">
+                <img src="./multimedia/Roma 1.jpg" alt="Roma" class="img">
             </div>
             <div>
                 <h3>Viajes a Tailandia</h3>
-                <img src="./multimedia/Tailandia 1.jpg" alt="Tailandia">
+                <img src="./multimedia/Tailandia 1.jpg" alt="Tailandia" class="img">
             </div>
             <div>
                 <h3>Viajes a Sidney</h3>
-                <img src="./multimedia/Sidney 1.jpg" alt="Sidney">
+                <img src="./multimedia/Sidney 1.jpg" alt="Sidney" class="img">
             </div>
         </article>
         <article class="destinos">
             <div>
                 <h3>Viajes a Estocolmo</h3>
-                <img src="./multimedia/Estocolmo1.jpg" alt="Estocolmo">
+                <img src="./multimedia/Estocolmo1.jpg" alt="Estocolmo" class="img">
             </div>
             <div>
                 <h3>Viajes a Londres</h3>
-                <img src="./multimedia/londres1.jpg" alt="Londres">
+                <img src="./multimedia/londres1.jpg" alt="Londres" class="img">
             </div>
             <div>
                 <h3>Viajes a Cancun</h3>
-                <img src="./multimedia/Cancun1.jpg" alt="Cancun">
+                <img src="./multimedia/Cancun1.jpg" alt="Cancun" class="img">
             </div>
         </article>
     </section>
@@ -113,28 +118,44 @@
         <h3>LOS MEJORES VUELOS DESDE ARGENTINA</h3>
     </section>      
     <section class="grid-layout">
-        <div class="grid-item1">
+        <div class="grid-item1" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
         </div>
-        <div class="grid-item2">
+        <div class="grid-item2" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
         </div>
-        <div class="grid-item3">
+        <div class="grid-item3" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
         </div>
-        <div class="grid-item4">
+        <div class="grid-item4" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
         </div>
-        <div class="grid-item5">
+        <div class="grid-item5" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
         </div>
-        <div class="grid-item6">
+        <div class="grid-item6" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
         </div>
-        <div class="grid-item7">
+        <div class="grid-item7" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
         </div>
-        <div class="grid-item8">
+        <div class="grid-item8" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
 
         </div>
     </section>
@@ -155,5 +176,9 @@
         </div>    
     </footer>   
    <!--Fin footer de la pagina-->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
 </body>
 </html>
