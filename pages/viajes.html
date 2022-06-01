@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>FlyFast</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!-- BS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <!--Header de la pagina-->
@@ -32,42 +33,76 @@
     </header>
     <!--Fin Header de la pagina-->
     <main>
-        <form action="viajes.html" method="get" class="formulario">
-        <h1>Consigue vuelos a precios increible!</h1>    
-            <input type="radio" name="vuelos" value="ida y vuelta" required>
-            <label for="radio">Ida y vuelta</label>
-
-            <input type="radio" name="vuelos" value="solo ida" required>
-            <label for="radio">Solo ida</label>
-
-            <input type="radio" name="vuelos" value="multidestino" required>
-            <label for="radio">Multidestino</label>
-
-            <input type="submit" value="Elegi">
-        <h2>Ingresa lugar de destino</h2>    
-            <label for="text">Salgo de:</label>
-            <input type="text" name="ingresa ciudad" placeholder="Ingresa ciudad" required>
-
-            <label for="text">Voy a:</label>
-            <input type="text" name="" placeholder="Ingresa destino" required>
-
-            <label for="date">Salida</label>
-            <input type="date">
-
-            <label for="date">Regreso</label>
-            <input type="date">
-
-            <label for="number">Personas</label>
-            <input type="number" id="numbrer" max="9" min="1">
-
-            <label for="clase">Clase</label>
-            <select name="clase" id="clase">
-                <option value="primera clase">Primera clase</option>
-                <option value="premium">Premium</option>
-                <option value="business">Business</option>
-                <option value="lowcost">Lowcost</option>
-            </select>
-            <input type="submit" value="Buscar">
+        <article>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../multimedia/banner1.jpg" class="d-block w-100" alt="Baner1">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/banner2.jpg" class="d-block w-100" alt="Banner2">
+              </div>
+              <div class="carousel-item">
+                <img src="../multimedia/banner3.jpg" class="d-block w-100" alt="Baner3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </article>
+        <h1 class="titulo">Consigue vuelos a precios increible!</h1>    
+        <form class="container">
+            <div class="col-md-6">
+              <h2>Ingresa lugar de destino</h2>
+              <label for="inputEmail4" class="form-label">Salgo de:</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Lugar de partida">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Voy a:</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Lugar de destino">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Personas</label>
+                <select id="inputState" class="form-select">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                </select>
+              </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Clase</label>
+              <select id="inputState" class="form-select">
+                <option selected>Primera Clase</option>
+                <option>Premium</option>
+                <option>Business</option>
+                <option>Low cost</option>
+                <option>Turista</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Aceptar
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+          </form>
         </form> 
         <section>
             <h2>Elegi tu mejor opcion de viaje</h2>
@@ -118,44 +153,28 @@
             <h3>LOS MEJORES VUELOS DESDE ARGENTINA</h3>
         </section>
         <section class="grid-layout">
-            <div class="grid-item1" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="grid-item1">
     
             </div>
-            <div class="grid-item2" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="grid-item2">
     
             </div>
-            <div class="grid-item3" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="grid-item3">
     
             </div>
-            <div class="grid-item4" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="grid-item4">
     
             </div>
-            <div class="grid-item5" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="grid-item5">
     
             </div>
-            <div class="grid-item6" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="grid-item6">
     
             </div>
-            <div class="grid-item7" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="grid-item7">
     
             </div>
-            <div class="grid-item8" data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000">
+            <div class="grid-item8">
     
             </div>
         </section>
@@ -175,10 +194,8 @@
             <p>Preguntas Frecuentes</p>
         </div>
     </footer>
-    <!--Fin footer de la pagina--> 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-     AOS.init();
-   </script>      
+    <!--Fin footer de la pagina-->  
+     <!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>
 </html>

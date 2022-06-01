@@ -14,7 +14,7 @@ header {
     display: flex;
     height: 10rem;
     justify-content: space-between;
-    background:  linear-gradient(to top, #1755b1 0%,#2782c4 20%,#6da6ce 50%,#96b7d1 80%,#c5d6e2 100%);
+    background-color: #1755b1 ;
     align-items: center;
     padding: 1rem;
 }
@@ -51,10 +51,15 @@ nav a:hover{
     justify-content: space-around;
     gap: 2rem;
 }
-
+.titulo{
+    text-align: center;
+    font-size: 4rem;
+    margin: 4rem;
+    color: #4e4e4e;
+}
 /*Estilos main*/
-.formulario{    
-    background-image: url(../multimedia/banner-travel.jpg);
+/*.formulario{    
+    background-color:
     background-repeat: no-repeat;
     background-size: cover;
     height: 25rem;
@@ -69,8 +74,7 @@ nav a:hover{
 }
 .formulario input type{
     background-color: aqua;
-}
-
+}*/
 /*FLEXBOX*/
 section h2{
     text-align: center;
@@ -160,11 +164,12 @@ section h2{
 footer{
     display: flex;
     flex-direction: column;
-    height: 10rem;
+    height: 11rem;
     background-color: #1755b1;
     font-family: 'Source Sans Pro', sans-serif;
     justify-content: space-around;
     font-weight: 800; 
+    color: black;
 }
 footer div{
     margin-left: 2.2rem;
@@ -342,7 +347,7 @@ footer div{
     footer{
         display: flex;
         flex-direction: column;
-        height: 8rem;
+        height: 12rem;
         background-color: #1755b1;
         justify-content: space-around;
         align-items: center;
@@ -353,7 +358,7 @@ footer div{
     footer{
         display: flex;
         flex-direction: column;
-        height: 6rem;
+        height: 10rem;
         background-color: #1755b1;
         justify-content: space-around;
         align-items: center;
