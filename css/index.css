@@ -17,6 +17,7 @@ header {
     background-color: #1755b1 ;
     align-items: center;
     padding: 1rem;
+    width: 100%;
 }
 header div p{
     font-size: 5rem;
@@ -26,13 +27,17 @@ nav a {
     font-weight: 600;
     text-decoration: none;
     color: black;
+    width: 100%;
+}
+nav a:visited{
+    color: #252525;
+    border-bottom: solid 2px #252525;
 }
 nav a:hover{
     color: whitesmoke;
     border-bottom: solid 2px white ;
     padding: .4rem 1rem;
 }
-
 .logo{
     display: flex;
     height: 90px;
@@ -49,7 +54,9 @@ nav a:hover{
     display: flex;
     text-align: center;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 1.2rem;
+    width: 100%;
+    margin-right: 6rem;
 }
 .titulo{
     text-align: center;
@@ -92,6 +99,9 @@ section h2{
     margin: 5rem;
     color: #4e4e4e;
     gap: 1.8rem;
+}
+.destinos img{
+    width: 100%;
 }
 .img{
     transition: all .4s linear;
@@ -179,10 +189,12 @@ footer div{
     header{
         display: flex;
         flex-direction: column;
-        height: 9rem;    
+        height: 9rem;   
+        width: 100%; 
     }
     nav{
         padding: 10px 0px;
+        width: 100%;
     }
     .logo{
         display: flex;
@@ -201,25 +213,33 @@ footer div{
         display: inline-block;
     }
     nav a{
-        margin-bottom: 4rem ;
+        margin-bottom: 3rem ;
     }
     .enlaces{
         display: flex;
         text-align: end;
-        font-size: 1rem;
+        font-size: 0.9rem;
+        width: 100%;
+        gap: 1.4rem;
+        margin-top: 1rem;
+        margin-right: 2rem;
     }
 }
 @media screen and (max-width: 480px) {
     header{
         display: flex;
         flex-direction: column;
-        height: 8rem;    
+        height: 8rem;   
+        width: 100%; 
     }
     .enlaces{
         display: flex;
         text-align: end;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         gap: 1rem;
+        width: 100%;
+        margin-top: 3rem;
+        margin-right: 1rem;
     }
 }    
 /*media form*/
@@ -229,6 +249,7 @@ footer div{
         background-size: cover;
         font-size: 1rem;
         height: 16rem;
+        width: 100%;
     }
 }
 @media screen and (max-width: 768px){   
@@ -237,6 +258,7 @@ footer div{
             background-size: cover;
             font-size: 1rem;
             height: 20rem;
+            width: 100%;
         }
 }   
 /*media flex*/
@@ -246,6 +268,9 @@ footer div{
         flex-direction: column;
         justify-content: center;
         font-size: 1.8rem;
+    }
+    .destinos img{
+        width: 100%;
     }
     section h2{
         text-align: center;
