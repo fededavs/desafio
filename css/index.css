@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,700&display=swap');
-/*Estilos header*/
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +9,7 @@ body{
     font-size: 1.2rem;
     font-weight: 800;
 }
+/*Estilos header*/
 header {
     display: flex;
     height: 10rem;
@@ -34,7 +34,7 @@ nav a:visited{
     border-bottom: solid 2px #252525;
 }
 nav a:hover{
-    color: whitesmoke;
+    color: white;
     border-bottom: solid 2px white ;
     padding: .4rem 1rem;
 }
@@ -58,12 +58,6 @@ nav a:hover{
     width: 100%;
     margin-right: 6rem;
 }
-.titulo{
-    text-align: center;
-    font-size: 4rem;
-    margin: 4rem;
-    color: #4e4e4e;
-}
 /*Estilos main*/
 /*.formulario{    
     background-color:
@@ -82,6 +76,19 @@ nav a:hover{
 .formulario input type{
     background-color: aqua;
 }*/
+.titulo{
+    text-align: center;
+    font-size: 4rem;
+    margin: 4rem;
+    margin-bottom: 1rem;
+    color: #4e4e4e;
+}
+.parrafo{
+    text-align: center;
+    font-size: 1.6rem;
+    color: #4e4e4e;
+    margin: 1rem 8rem 4rem 8rem;
+}
 /*FLEXBOX*/
 section h2{
     text-align: center;

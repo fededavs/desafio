@@ -1,0 +1,39 @@
+/*Estilos footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 11rem;
+    background-color: $primary;
+    font-family: $font-principal;
+    justify-content: space-around;
+    font-weight: 800; 
+    color: $color-textdark;
+
+    & div{ 
+        margin-left: $spacing-xsmall; 
+    } 
+}
+
+/*media footer*/
+@media screen and (max-width: 768px){
+    footer{   
+        display: flex;
+        flex-direction: column;
+        height: 12rem;
+        background-color: $primary;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 600; 
+    }
+}
+@media screen and (max-width: 480px){ 
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
+        background-color: $primary;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 600; 
+    }
+} 
