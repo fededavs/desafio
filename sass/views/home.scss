@@ -3,56 +3,45 @@
     text-align: center;
     font-size: $text-large;
     margin: $spacing-small;
-    margin-bottom: $spacing-xsmall;
-    color: $color-text;
+    margin-bottom: $spacing-small;
+    color: map-get($colors, color-text); 
 }
 /*FLEXBOX*/
 section h2{ 
-    font-family: $font-secondary;
-    text-align: center;
-    font-size: $text-large;
-    margin-top: $spacing-medium;
-    color: $color-text;
+    @extend .titulo;
 }
-
 .destinos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
     font-size: $text-xsmall;
-    margin: $spacing-small;
-    color: $color-text;
-    gap: $spacing-xsmall;
+    margin: $spacing-medium;
+    color: map-get($colors, color-text);
+    @include flex(row, center, space-around, $spacing-xsmall);
 
         & img{
             width: 100%;
+            border-radius: 18px;
         }
 }
 .img{
     transition: all .4s linear;
 
     &:hover{
-        transform: scale(1.1, 1.1);
         filter: brightness(.4);
+        transform: scale(1.1, 1.1);
     }
-}/*GRID GALLERY*/
+}
+/*GRID GALLERY*/
 .subtitulo{
-    font-family: $font-secondary;
-    font-size: $text-medium;
-    color: $color-text;
-    text-align: center;
-    margin-top :$spacing-small;
-
+    @extend .titulo;
+    margin: $spacing-small;
 }
 .grid-layout{
-    font-family: 'Source Sans Pro', sans-serif; 
+    font-family: $font-principal; 
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(3, 300px);  
     justify-content: center;
     margin: $spacing-medium;
-    gap: $spacing-xsmall; 
+    gap: $spacing-u-small; 
 }
 .grid-item1{
     grid-column: 1 / 2;
@@ -83,7 +72,7 @@ section h2{
 .grid-item6{
     grid-column: 1 / 2;
     grid-row: 3 / 4;
-    background-image: url(../multimedia/grid6.jpg);
+    background-image: url(../multimedia/grid6.jpg)
 }  
 .grid-item7{
     grid-column: 2 / 3;
@@ -148,7 +137,7 @@ section h2{
         grid-template-rows: repeat(4, 200px);  
         justify-content: center;
         margin: $spacing-medium;
-        gap: 20px;
+        gap: $spacing-xsmall/ 2;
 
     .grid-item1{
                 grid-column: 1 / 2;
@@ -189,7 +178,7 @@ section h2{
         grid-template-columns: repeat(2, 160px);
         grid-template-rows: repeat(4, 160px);  
         justify-content: center;
-        gap: $spacing-xsmall;
+        gap: $spacing-u-small/ 2;
 
     .grid-item1{
             grid-column: 1 / 2;

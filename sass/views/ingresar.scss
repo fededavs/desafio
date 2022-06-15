@@ -1,0 +1,20 @@
+.viajes{
+    @include flex(row, center, space-around, $spacing-xsmall);
+    margin: $spacing-medium;
+        &_img{
+            border-radius: 18px;
+            width: 100%;
+            gap: $spacing-small;
+            transition: all .3s linear;
+        }
+        &_img:hover{
+            transform: scale(1.1 1.1);
+            filter: brightness(.4);      
+        }
+}
+/* Media */
+@media screen and (max-width: 768px){
+    .viajes{
+        @include flex(column, center, space-around, $spacing-u-small);
+    }   
+}

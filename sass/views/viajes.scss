@@ -1,0 +1,39 @@
+.destinos_internacionales{
+    @include flex(row, center, space-around, $spacing-xsmall);
+    margin: $spacing-medium;
+        &-img{
+            border-radius: 18px;
+            width: 100%;
+            gap: $spacing-small;
+            transition: all .3s linear;
+        }
+        &-img:hover{
+            transform: scale(1.1 1.1);
+            filter: brightness(.4);
+        }
+}     
+section h2{
+    font-size: $text-large;
+}
+.destinos_nacionales{
+    @extend .destinos_internacionales;
+    margin-bottom: $spacing-medium;
+        &-img{
+            border-radius: 18px;
+            width: 100%;
+            gap: $spacing-small;
+            transition: all .3s linear;
+        }
+        &-img:hover{
+            transform: scale(1.1 1.1);
+            filter: brightness(.4);
+        }
+}  
+@media screen and (max-width: 768px){
+    .destinos_internacionales{
+        @include flex(column, center, space-around, $spacing-u-small);
+    }
+    .destinos_nacionales{
+        @include flex(column, center, space-around, $spacing-u-small);
+    }
+}

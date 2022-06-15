@@ -1,11 +1,13 @@
 /* Variables */
 
 /* Colores */
-$primary:  #1755b1;
-$color-text: #4e4e4e;
-$color-textdark: black;
-$color-hover: white;
-$color-visited: #252525;
+$colors: (
+    primary:  #1755b1,
+    color-text: #4e4e4e,
+    color-textdark: black, 
+    color-hover: white,
+    color-visited: #252525
+);
 /* Spacings */
 $spacing-large: 8rem;
 $spacing-medium: 6rem;

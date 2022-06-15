@@ -6,6 +6,7 @@
 /* MISC */
 
 @import "./misc/variables.scss";
+@import "./misc/mixins.scss";
 @import "./misc/normalize.scss";  
 
 /* PARTIALS */ 
@@ -16,3 +17,7 @@
 /* VIEWS */
 
 @import "./views/home.scss"; 
+@import "./views/nosotros.scss";
+@import "./views/viajes.scss";
+@import "./views/ingresar.scss";
+@import "./views/alojamientos.scss";

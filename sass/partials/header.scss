@@ -3,7 +3,7 @@ header {
     display: flex;
     height: 10rem;
     justify-content: space-between;
-    background-color: $primary;
+    background-color: map-get($colors, primary);
     align-items: center;
     padding: $spacing-xsmall;
     width: 100%;
@@ -16,17 +16,17 @@ header {
 nav a {
     font-weight: 600;
     text-decoration: none;
-    color: $color-textdark;
+    color: map-get($colors, color-textdark);
     width: 100%;
 
         &:visited{
-            color: $color-visited;
-            border-bottom: solid 2px $color-visited;
+            color: map-get($colors, color-visited);
+            border-bottom: solid 2px map-get($colors, color-visited);
         }
 
         &:hover{
-            color: $color-hover;
-            border-bottom: solid 2px $color-hover;
+            color: map-get($colors, color-hover);
+            border-bottom: solid 2px map-get($colors, color-hover);
             padding: $spacing-psmall;
         }
 }
@@ -80,7 +80,7 @@ nav a {
 
             & p{
                 font-family: sans-serif;
-                font-size: $text-medium;
+                font-size: $text-medium; 
                 align-items: center;
                 display: inline-block;
             }

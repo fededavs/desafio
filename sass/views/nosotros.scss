@@ -1,0 +1,18 @@
+.subtitulo_vuelos{
+    font-family: $font-secondary;
+    font-size: $text-medium; 
+    text-align: center;
+    margin: $spacing-small;
+}
+.texto{
+    font-family: $font-principal;
+    font-size: $text-large/ 2;
+    margin: $spacing-medium;
+}
+@media screen and (max-width: 768px) {
+    .subtitulo_vuelos{
+        font-family: $font-secondary;
+        font-size: text-base;
+        margin: $spacing-u-small
+    }
+}

@@ -1,0 +1,33 @@
+.hoteles{
+    @include flex(row, center, space-around, $spacing-medium);
+    margin: $spacing-medium;
+        &_img{
+            width: 100%;
+            border-radius: 16px;
+            gap: $spacing-small;    
+        }
+}
+.titulo_hotel{
+    text-align: center;
+}
+.parrafo{
+    font-family: $font-principal;
+    font-size: $text-medium; 
+    text-align: center;
+    margin: $spacing-medium;
+}
+/* Media Q */ 
+@media screen and (max-width: 768px){
+    .hoteles{
+        @include flex(column, center, space-around, $spacing-u-small);
+    }
+    .parrafo{
+        font-size: $text-small;
+        margin-bottom: $spacing-small;
+    }
+}
+@media screen and (max-width: 480px) {
+    .hoteles{
+        @include flex(column, center, space-around, $spacing-xsmall);
+    }
+}
