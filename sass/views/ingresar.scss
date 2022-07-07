@@ -1,14 +1,15 @@
 .viajes{
     @include flex(row, center, space-around, $spacing-xsmall);
-    margin: $spacing-medium;
+    margin: $spacing-large;
         &_img{
-            border-radius: 18px;
+            border-radius: 10px;
             width: 100%;
             gap: $spacing-small;
             transition: all .3s linear;
+            box-shadow: 0px 15px 25px rgba($color: #0a0a0a, $alpha: 1.0);
         }
         &_img:hover{
-            transform: scale(1.1 1.1);
+            transform: scale(0.9);
             filter: brightness(.4);      
         }
 }

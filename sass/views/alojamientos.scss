@@ -1,9 +1,9 @@
 .hoteles{
     @include flex(row, center, space-around, $spacing-medium);
-    margin: $spacing-medium;
+    margin: $spacing-large;
         &_img{
             width: 100%;
-            border-radius: 16px;
+            border-radius: 10px;
             gap: $spacing-small;    
         }
 }
@@ -14,7 +14,7 @@
     font-family: $font-principal;
     font-size: $text-medium; 
     text-align: center;
-    margin: $spacing-medium;
+    margin: $spacing-large;
 }
 /* Media Q */ 
 @media screen and (max-width: 768px){

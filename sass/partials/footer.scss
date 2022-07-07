@@ -1,25 +1,44 @@
 /*Estilos footer*/
-footer{
+footer{ 
     display: flex;
     flex-direction: column;
-    height: 11rem;
+    height: 14rem;
     background-color: map-get($colors, primary);
     font-family: $font-principal;
     justify-content: space-around;
     font-weight: 800; 
     color: map-get($colors, color-textdark);
+    
+        & div{ 
+            margin-left: $spacing-xsmall;
+        } 
+        & div a{
+            text-decoration: none;
+            color: map-get($colors, color-textdark);
 
-    & div{ 
-        margin-left: $spacing-xsmall; 
-    } 
-}
-
+                &:hover{
+                    color: map-get($colors, color-hover);
+                }
+        }
+        & a svg{
+            justify-content: space-around;
+            width: 30px;
+            height: 30px;
+        }
+    .red-social{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: $spacing-u-small;
+        gap: $spacing-xsmall;    
+    }
+}        
 /*media footer*/
 @media screen and (max-width: 768px){
     footer{   
         display: flex;
         flex-direction: column;
-        height: 12rem;
+        height: 14rem;
         background-color: map-get($colors, primary);
         justify-content: space-around;
         align-items: center;
@@ -30,10 +49,10 @@ footer{
     footer{
         display: flex;
         flex-direction: column;
-        height: 10rem;
+        height: 14rem;
         background-color: map-get($colors, primary);
         justify-content: space-around;
         align-items: center;
         font-weight: 600; 
     }
-} 
+}  

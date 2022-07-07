@@ -12,45 +12,44 @@ header {
         font-size: $text-xlarge;
         font-weight: 600;
     }
+    nav a { 
+        font-weight: 600;
+        text-decoration: none;
+        color: map-get($colors, color-textdark);
+        width: 100%;
+
+            &:visited{
+                color: map-get($colors, color-visited);
+                border-bottom: solid 2px map-get($colors, color-visited);
+            }
+
+            &:hover{
+                color: map-get($colors, color-hover);
+                border-bottom: solid 2px map-get($colors, color-hover);
+                padding: $spacing-psmall;
+            }
+    }
+    .logo{
+        display: flex;
+        height: 90px;
+        margin-right: $spacing-xsmall;
+
+            & p{
+                font-family: sans-serif;
+                font-size: $spacing-small;
+                display: inline-block;   
+            }
+    }
+    .enlaces{
+        list-style: none;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        gap: $spacing-xsmall;
+        width: 100%;
+        margin-right: $spacing-medium;
+    } 
 }
-nav a {
-    font-weight: 600;
-    text-decoration: none;
-    color: map-get($colors, color-textdark);
-    width: 100%;
-
-        &:visited{
-            color: map-get($colors, color-visited);
-            border-bottom: solid 2px map-get($colors, color-visited);
-        }
-
-        &:hover{
-            color: map-get($colors, color-hover);
-            border-bottom: solid 2px map-get($colors, color-hover);
-            padding: $spacing-psmall;
-        }
-}
-.logo{
-    display: flex;
-    height: 90px;
-    margin-right: $spacing-xsmall;
-
-        & p{
-            font-family: sans-serif;
-            font-size: $spacing-small;
-            display: inline-block;   
-        }
-}
-.enlaces{
-    list-style: none;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    gap: $spacing-xsmall;
-    width: 100%;
-    margin-right: $spacing-medium;
-} 
-
 /*media header*/
 @media screen and (max-width: 768px){
     header{
@@ -58,42 +57,43 @@ nav a {
         flex-direction: column;
         height: 9rem;   
         width: 100%; 
-    }
-    nav{
-        padding: $spacing-xsmall $spacing-none;
-        width: 100%; 
-        
-            & a{
-                margin-bottom: $spacing-small;
-            }
-    }
-    .logo{
-        display: flex;
-        height: 20px;
-        justify-content: center;
-        height: 10px;
-        margin-right: $spacing-medium;
 
-            & img{
-                height: 3rem;
-            }
+        nav{
+            padding: $spacing-xsmall $spacing-none;
+            width: 100%; 
+            
+                & a{
+                    margin-bottom: $spacing-small;
+                }
+        }
+        .logo{
+            display: flex;
+            height: 20px;
+            justify-content: center;
+            height: 10px;
+            margin-right: $spacing-medium;
 
-            & p{
-                font-family: sans-serif;
-                font-size: $text-medium; 
-                align-items: center;
-                display: inline-block;
-            }
-    }
-    .enlaces{
-        display: flex;
-        text-align: end;
-        font-size: $text-xsmall;
-        width: 100%;
-        gap: $spacing-xsmall;
-        margin-top: $spacing-xsmall;
-        margin-right: $spacing-xsmall;
-    }
+                & img{
+                    height: 3rem;
+                }
+
+                & p{
+                    font-family: sans-serif;
+                    font-size: $text-medium; 
+                    align-items: center;
+                    display: inline-block;
+                }
+        }
+        .enlaces{
+            display: flex;
+            text-align: end;
+            font-size: $text-xsmall;
+            width: 100%;
+            gap: $spacing-xsmall;
+            margin-top: $spacing-xsmall;
+            margin-right: $spacing-xsmall;
+        }
+    }    
 }
 @media screen and (max-width: 480px) {
     header{
@@ -101,14 +101,15 @@ nav a {
         flex-direction: column;
         height: 8rem;   
         width: 100%; 
-    }
-    .enlaces{
-        display: flex;
-        text-align: end;
-        font-size: $text-xsmall;
-        gap: $spacing-u-small; 
-        width: 100%;
-        margin-top: $spacing-xsmall;
-        margin-right: $spacing-u-small; 
-    }
+    
+        .enlaces{
+            display: flex;
+            text-align: end;
+            font-size: $text-xsmall;
+            gap: $spacing-u-small; 
+            width: 100%;
+            margin-top: $spacing-xsmall;
+            margin-right: $spacing-u-small; 
+        }
+    }    
 }    
